@@ -141,6 +141,12 @@ img {
   width: 40vw;
 }
 
+@media screen and (max-width: 875px) {
+  #headerSlider #logoCoverBlock .logoCover .logoSvg {
+    width: 70vw;
+  }
+}
+
 #headerSmallerSlider {
   width: 100vw;
   height: 40vh;
@@ -151,7 +157,7 @@ img {
 }
 
 @media screen and (max-width: 875px) {
-  .logoCover .logoSvg {
+  #headerSmallerSlider .logoCover .logoSvg {
     display: none;
   }
 }
