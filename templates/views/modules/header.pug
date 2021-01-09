@@ -1,0 +1,22 @@
+include objects/logo.pug
+include objects/arrow-down.pug
+include objects/menu.pug
+#headerSlider
+    #headerSlideBlock
+        //#logoImgBlock
+        //- #logoCoverBlock
+        //-     +logo()
+        ul.sliderBox
+            li#logoCoverBlock
+                //#logoCoverBlock
+                +logo("#")
+            each item in home.header_slider.img
+                li.imgBox
+                    img(src=item.slide, alt="alt", class='parallax')
+        #darkenFilter
+    
+            //rect#rectangle(fill="blue" mask="url(#logoSvg)")
+    #arrowDownBox
+        a(id="arrowParent" href="#page")
+            +arrowDown()
++menu()

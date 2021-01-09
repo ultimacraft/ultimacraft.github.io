@@ -1,0 +1,54 @@
+extends ../layouts/layout.pug
+
+block main
+    //- block text
+    .block-light#page
+        h1=ultimacraft_hr.about.title
+        .text
+            each paragraph in ultimacraft_hr.about.content
+                p=paragraph.p
+        .stats
+    //- block image
+    .block-panorama
+        .imgBox
+            img.parallax(src=ultimacraft_hr.panorama.img_link, alt="alt")
+    //- block columns
+    .block-light
+        h1=ultimacraft_hr.features.title
+        .text
+            .columns
+                each item in ultimacraft_hr.features.columns
+                    ul
+                        each item_ul in item.list
+                            li=item_ul.list_item
+        //- h1=ultimacraft_hr.blocks.title
+        //- .text
+        //-     .columns
+        //-         each item in ultimacraft_hr.blocks.columns
+        //-             ul
+        //-                 each item_ul in item.list
+        //-                     li=item_ul.list_item
+    //- block text & image
+    each item in ultimacraft_hr.block_and_image 
+        .block-with-image
+            .textBox
+                .text
+                    h1=item.block.title
+                    each paragraph in item.block.text
+                        p=paragraph.p
+                    .links
+                        each item_button in item.block.buttons
+                            a.button(href=item_button.button.link)=item_button.button.title
+            .sliderBorder(id=item.block.id)
+                ul.sliderSmallBox
+                    each item_slide in item.block.slider
+                        li.imgBox
+                            img.parallax(src=item_slide.slide, alt="alt")
+                            p.desc=item_slide.desc
+    .block-light
+        //- h1=enhanced_biomes_details.download.title
+        .columns
+            each item_button in ultimacraft_hr.downloads.buttons
+                a.buttonBig(href=item_button.button.link)=item_button.button.title
+block scripts
+    script(src="js/main.js")
