@@ -583,10 +583,10 @@ img {
   width: inherit;
   height: inherit;
   opacity: 0;
-  -webkit-transition: opacity 5s, transform 1s;
-  -moz-transition: opacity 5s, transform 1s;
-  -o-transition: opacity 5s, transform 1s;
-  transition: opacity 5s, transform 1s;
+  -webkit-transition: opacity 5s;
+  -moz-transition: opacity 5s;
+  -o-transition: opacity 5s;
+  transition: opacity 5s;
 }
 
 .block-with-image .sliderBorder .sliderSmallBox .showing {
