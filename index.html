@@ -4,10 +4,9 @@
     <link rel="shortcut icon" href="images/u_favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="libs/jquery.js"></script>
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <base target="_blank">
     <title></title>
   </head>
   <body>
@@ -16,7 +15,8 @@
         <!--#logoImgBlock-->
         <ul class="sliderBox">
           <li id="logoCoverBlock">
-            <!--#logoCoverBlock--><a class="logoCover" href="#">
+            <!--#logoCoverBlock-->
+                <div class="logoCover">
                   <svg class="logoSvg" data-name="uc-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1152 448">
                     <title>ultimacraft</title>
                     <filter id="dropshadow" height="130%">
@@ -52,7 +52,8 @@
                     <path d="M255,417V607H65V417h62V545h66V417h62m1-1H192V544H128V416H64V608H256V416Z" transform="translate(-64 -416)"></path>
                     <polygon points="0.5 447.5 0.5 256.5 191.5 256.5 191.5 319.5 63.5 319.5 63.5 384.5 191.5 384.5 191.5 447.5 0.5 447.5" filter="url(#dropshadow)"></polygon>
                     <path d="M255,673v62H127v66H255v62H65V673H255m1-1H64V864H256V800H128V736H256V672Z" transform="translate(-64 -416)"></path>
-                  </svg></a>
+                  </svg>
+                </div>
           </li>
           <li class="imgBox"><img class="parallax" src="images/main_bg1.jpg" alt="alt"></li>
           <li class="imgBox"><img class="parallax" src="images/main_bg2.jpg" alt="alt"></li>
@@ -106,6 +107,9 @@
             <li class="menuLink"><a href="about.html">blog</a></li>
           </ul>
         </header>
+    <div id="fullScreenBlock" style="display:none"><img id="fullScreenImg" src="images/Addons.jpg">
+      <p id="fullScreenText">fgdhetrhethfghdfd</p>
+    </div>
     <!--block text-->
     <div class="block-light" id="page">
       <h1>About</h1>
@@ -115,7 +119,7 @@
         <p>UltimaCraft require Optifine mod for correct work.</p>
       </div>
       <div class="columns">
-        <h2 style="color:#666">Total downloads: 60 000+</h2>
+        <h2 style="color:#666">Total downloads: 65 000+</h2>
         <h2 style="color:#666">Minecraft version: 1.16.2 - 1.16.4</h2>
       </div>
       <div class="stats"></div>
@@ -428,7 +432,8 @@
           <li class="navItem"><a href="https://www.planetminecraft.com/texture-pack/ultimacraft-4486358">MCPlanet</a></li>
           <li class="navItem"><a href="#">GitHub</a></li>
         </ul>
-      </div><a class="logoCover">
+      </div>
+          <div class="logoCover">
             <svg class="logoSvg" data-name="uc-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1152 448">
               <title>ultimacraft</title>
               <filter id="dropshadow" height="130%">
@@ -464,7 +469,8 @@
               <path d="M255,417V607H65V417h62V545h66V417h62m1-1H192V544H128V416H64V608H256V416Z" transform="translate(-64 -416)"></path>
               <polygon points="0.5 447.5 0.5 256.5 191.5 256.5 191.5 319.5 63.5 319.5 63.5 384.5 191.5 384.5 191.5 447.5 0.5 447.5" filter="url(#dropshadow)"></polygon>
               <path d="M255,673v62H127v66H255v62H65V673H255m1-1H64V864H256V800H128V736H256V672Z" transform="translate(-64 -416)"></path>
-            </svg></a>
+            </svg>
+          </div>
       <div id="copyright">
         <p>©2021 UltimaCraft. All rights reserved.</p>
       </div>
