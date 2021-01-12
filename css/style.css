@@ -24,6 +24,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
+  background-color: #333333;
   box-shadow: inset 0 0 10px black;
   border-radius: 0px;
 }
@@ -40,6 +41,7 @@ html {
 h1, h2, p, li, a, img, .desc {
   color: #dddddd;
   text-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  transition: color .5s;
 }
 
 h1::selection, h2::selection, p::selection, li::selection, a::selection, img::selection, .desc::selection {
@@ -62,6 +64,10 @@ body {
   width: 100vw;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+div {
+  transition: background-color .5s;
 }
 
 h1 {
@@ -118,7 +124,7 @@ a:focus {
 
 img {
   transform: scale(1.2) translate(0%, 5%);
-  transition: transform .3s;
+  transition: transform .1s;
   object-fit: cover;
   cursor: pointer;
 }
@@ -320,7 +326,7 @@ img {
   padding: 0;
   margin: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   opacity: 1;
   z-index: 4;
   letter-spacing: 0.5rem;
@@ -332,6 +338,7 @@ img {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  flex-wrap: warp;
   padding: 0;
   margin: 0;
   transition: background 1s opacity 1s;
@@ -388,6 +395,20 @@ img {
   background-color: white;
 }
 
+.menuBarSecond .menuLink p:hover::before, .menuBar .menuLink p:hover::before {
+  border-top: 0.5rem solid #000000;
+}
+
+.menuBarSecond .menuLink p::before, .menuBar .menuLink p::before {
+  content: '';
+  position: relative;
+  right: 1rem;
+  top: 1.1rem;
+  border: .5rem solid transparent;
+  border-top: 0.5rem solid #ffffff;
+  transition: border .5s;
+}
+
 .menuBarSecond .menuLink .activeList, .menuBar .menuLink .activeList {
   background-color: #38a0ff;
 }
@@ -416,7 +437,54 @@ img {
   font-size: 2rem;
 }
 
+.menuButtonsStatic, .menuButtonsFixed {
+  display: block;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 3rem;
+  width: auto;
+  right: 0;
+  z-index: 10;
+}
+
+@media screen and (max-width: 875px) {
+  .menuButtonsStatic, .menuButtonsFixed {
+    bottom: 0;
+  }
+}
+
+.menuButtonsStatic {
+  position: absolute;
+  top: 0;
+}
+
+.menuButtonsFixed {
+  position: fixed;
+  top: -4rem;
+  transition: top 1s;
+}
+
+.theme, .translate {
+  display: inline-block;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  margin: 0;
+  fill: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  transition: .5s;
+}
+
+.theme:hover, .translate:hover {
+  fill: black;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scaleX(1.05);
+}
+
 .block-light {
+  background-color: #333333;
   padding: 4rem 10rem 4rem 10rem;
 }
 
@@ -702,7 +770,7 @@ img {
   position: relative;
   max-width: 85%;
   max-height: 85%;
-  top: -10%;
+  top: -8%;
   object-fit: cover;
   box-shadow: 0 0 100px black, 0 0 100px black;
 }
@@ -733,9 +801,18 @@ img {
   position: absolute;
   bottom: 3%;
   text-shadow: 0 0 10px black;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: .5s;
+}
+
+#fullScreenBlock #help {
+  display: none;
+  mix-blend-mode: screen;
+  opacity: .7;
+  position: fixed;
+  text-shadow: 0 0 10px black;
+  transition: opacity 1s;
 }
 
 footer {

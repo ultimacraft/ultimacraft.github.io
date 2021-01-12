@@ -37,6 +37,8 @@ $(document).scroll(function() {
 
 $(document).ready(function() {
 
+    var whenDarkOutside = 16
+
     var arrowDown = '#arrowDownBox'
     var footerNavLink = '.navItem'
 
@@ -65,13 +67,13 @@ $(document).ready(function() {
     }
 
     // smooth scroll
-    $(arrowDown).on('click','a', function (event) {
+    $(arrowDown).on('click','#arrowParent', function (event) {
         event.preventDefault()
         var id  = $(this).attr('href'),
             top = $(id).offset().top - $('.menuBar').height() + 5
         $('body,html').animate({scrollTop: top}, fadeTime_Appearing)
     })
-    $(footerNavLink).on('click','a', function (event) {
+    $(footerNavLink).on('click','#arrowParent', function (event) {
         event.preventDefault()
         var id  = $(this).attr('href'),
             top = ($(id).offset().top) - $('.menu').height() + 5
@@ -138,10 +140,16 @@ $(document).ready(function() {
         $('.menuBar').css({
             'top':'-55px'
         })
+        $('.menuButtonsFixed').css({
+            'top':'-55px'
+        })
         $('.menuBar .subMenu').fadeOut(fadeTime_MenuList)
     }
     function CountDown() {
         $('.menuBar').css({
+            'top':'0'
+        })
+        $('.menuButtonsFixed').css({
             'top':'0'
         })
     }
@@ -192,11 +200,10 @@ $(document).ready(function() {
 
     //$('#fullScreenBlock').fadeOut(1)
 
-    $('img').click(function(event){
+    $('img').click(function(){
 
         var imgSrc = $(this).attr('src')
 
-        console.log(imgSrc)
         //$("html,body").css("overflow-y","hidden")
         $('#fullScreenBlock').fadeToggle(500)
         $('#fullScreenImg')[0].src = imgSrc
@@ -210,5 +217,51 @@ $(document).ready(function() {
     //     $("html,body").css("overflow-y","auto")
     //     $('#fullScreenBlock').fadeToggle(500)
 
+    // })
+    // var now = new Date();
+    // var colorD = '.text h1, .text p, .columns p, .columns ul li, .block-light h1'
+    // var color4 = '.textBox'
+    // var color3 = '.block-light, body'
+
+    // function lightTheme() {
+    //     $(colorD).css('color', '#444444')
+    //     $(color4).css('background-color', '#ffffff')
+    //     $(color3).css('background-color', '#eeeeee')
+    //     $('.button, .buttonBig').on('mouseenter', function(){
+    //         $(this).css('color', '#fff')
+    //     })
+    // }
+    // function darkTheme() {
+    //     $(colorD).css('color', '#dddddd')
+    //     $(color4).css('background-color', '#444444')
+    //     $(color3).css('background-color', '#333333')
+    //     $('.button, .buttonBig').on('mouseenter', function(){
+    //         $(this).css('color', '#333')
+    //     })
+    // }
+    // $('.button, .buttonBig').on('mouseout', function(){
+    //     $(this).css('color', '#38A0FF')
+    // })
+
+    //var theme = true
+    // if(now.getHours() >= whenDarkOutside) {
+    //     theme = true
+    //     darkTheme()
+    // }
+    // else {
+    //     theme = false
+    //     lightTheme()
+    // }
+
+    // $('.theme').click(function(){
+    //     if(theme == true) {
+    //         theme = false
+    //         lightTheme()
+    //     }
+    //     else {
+    //         theme = true
+    //         darkTheme()
+    //     }
+    //     console.log('Dark Theme = ' + darkTheme)
     // })
 })
