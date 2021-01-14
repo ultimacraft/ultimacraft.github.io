@@ -129,6 +129,15 @@ img {
   cursor: pointer;
 }
 
+hr {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3rem 0;
+  background-color: #333333;
+  margin: 0;
+  border: none;
+}
+
 #darkenFilter {
   position: absolute;
   top: 0;
@@ -484,6 +493,10 @@ img {
   transform: scaleX(1.05);
 }
 
+#page {
+  transition: filter 1s;
+}
+
 .block-light {
   background-color: #333333;
   padding: 4rem 10rem 4rem 10rem;
@@ -571,7 +584,7 @@ img {
 
 .block-with-image {
   display: flex;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 

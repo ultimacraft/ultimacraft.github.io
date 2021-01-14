@@ -1,3 +1,4 @@
+var theme = true
 
 var winHeight = $(window).height()
 $(window).resize(function() {
@@ -218,14 +219,15 @@ $(document).ready(function() {
 
     //$('#fullScreenBlock').fadeOut(1)
 
+    //var isOn = false
     $('img').click(function(){
 
-        var imgSrc = $(this).attr('src')
+        let imgSrc = $(this).attr('src')
 
         //$("html,body").css("overflow-y","hidden")
         $('#fullScreenBlock').fadeToggle(500)
         $('#fullScreenImg')[0].src = imgSrc
-        var description = $(this).siblings(".desc")
+        let description = $(this).siblings(".desc")
         $('#fullScreenText').text($(description).text())
 
     })
@@ -236,40 +238,39 @@ $(document).ready(function() {
     //     $('#fullScreenBlock').fadeToggle(500)
 
     // })
-    var now = new Date();
-    var colorD = '.text h1, .text p, .columns p, .columns ul li, .block-light h1'
-    var color4 = '.textBox'
-    var color3 = '.block-light, body'
+    //var now = new Date();
+    // var colorD = '.text h1, .text p, .columns p, .columns ul li, .block-light h1'
+    // var color4 = '.textBox'
+    // var color3 = '.block-light, body'
 
-    function lightTheme() {
-        $(colorD).css('color', '#444444')
-        $(color4).css('background-color', '#ffffff')
-        $(color3).css('background-color', '#eeeeee')
-        $('.button, .buttonBig').on('mouseenter', function(){
-            $(this).css('color', '#fff')
-        })
-    }
-    function darkTheme() {
-        $(colorD).css('color', '#dddddd')
-        $(color4).css('background-color', '#444444')
-        $(color3).css('background-color', '#333333')
-        $('.button, .buttonBig').on('mouseenter', function(){
-            $(this).css('color', '#333')
-        })
-    }
-    $('.button, .buttonBig').on('mouseout', function(){
-        $(this).css('color', '#38A0FF')
-    })
+    // function lightTheme() {
+    //     $(colorD).css('color', '#444444')
+    //     $(color4).css('background-color', '#ffffff')
+    //     $(color3).css('background-color', '#eeeeee')
+    //     $('.button, .buttonBig').on('mouseenter', function(){
+    //         $(this).css('color', '#fff')
+    //     })
+    // }
+    // function darkTheme() {
+    //     $(colorD).css('color', '#dddddd')
+    //     $(color4).css('background-color', '#444444')
+    //     $(color3).css('background-color', '#333333')
+    //     $('.button, .buttonBig').on('mouseenter', function(){
+    //         $(this).css('color', '#333')
+    //     })
+    // }
+    // $('.button, .buttonBig').on('mouseout', function(){
+    //     $(this).css('color', '#38A0FF')
+    // })
 
-    var theme = true
-    if(now.getHours() >= whenDarkOutside) {
-        theme = true
-        darkTheme()
-    }
-    else {
-        theme = false
-        lightTheme()
-    }
+    // if(now.getHours() >= whenDarkOutside) {
+    //     theme = true
+    //     darkTheme()
+    // }
+    // else {
+    //     theme = false
+    //     lightTheme()
+    // }
 
     $('.theme').click(function(){
         if(theme == true) {
