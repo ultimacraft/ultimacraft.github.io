@@ -81,5 +81,5 @@ var checkScrollSpeed = (function(settings){
 
 // listen to "scroll" event
 window.onscroll = function(){
-    skewPage( checkScrollSpeed() / 20 )
+    skewPage( checkScrollSpeed() / 30 )
 };
