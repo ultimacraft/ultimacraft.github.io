@@ -1,0 +1,84 @@
+
+footer
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    position: static
+
+    margin: 0
+    padding: 10vh 0
+
+    width: 100vw
+    height: auto
+
+    @include breakpoint($d-laptop)
+        padding: 2vh 0
+        width: 100vw
+        height: auto
+
+    background-color: $dark_gray
+    box-shadow: inset 0 10px 30px rgba($black, .3)
+
+    z-index: $z-footer
+    #navigation
+        display: flex
+        flex-direction: row
+        justify-content: center
+        width: 100%
+        margin-bottom: 3rem
+        flex-wrap: wrap
+        .navItem
+            list-style-type: square
+            &:first-child
+                margin-left: -2.2rem
+                list-style-type: none
+    p, h1, li
+        color: $lighten_gray
+        font-size: 2rem
+    a
+        display: inline-block
+        color: $blue
+        text-decoration: none
+        transition: color .5s
+        &:hover
+            color: $white
+    .socialList
+        display: flex
+        align-items: center
+        flex-direction: row
+        flex-wrap: wrap
+        .socialItem
+            list-style-type: none
+            background-color: $white
+            width: 6rem
+            height: 6rem
+            border-radius: 8rem
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            svg
+                width: 80%
+                height: 80%
+    #copyright
+        display: flex
+        flex-direction: row
+        flex: space-between
+        //margin-top: 20px
+        a
+            display: inline-flex
+    .logo_cover
+        width: 20rem
+        .logo_svg
+            mix-blend-mode: normal
+            //display: flex
+            justify-self: center
+            width: 100%
+            margin: 2vh 0
+            padding: 0
+            stroke: $gray
+            fill: $gray
+            z-index: 100
+            background: none
+            transform: scale(1)

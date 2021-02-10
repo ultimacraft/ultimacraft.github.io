@@ -1,0 +1,17 @@
+include objects/logo.pug
+include objects/arrow.pug
+include objects/menu.pug
+header#header_smaller_slider
+    #header_slide_block
+        ul.slider_box
+            li#logo_cover_block
+                //#logo_cover_block
+                +logo("#")
+            each item in home.header_slider.img
+                li.img_box
+                    img(src=item.slide, alt="alt", class='parallax')
+        #filter
+        #filter_second
+    
+            //rect#rectangle(fill="blue" mask="url(#logoSvg)")
++menu()

@@ -1,0 +1,98 @@
+extends ../layouts/layout_home.pug
+
+block main
+    #page
+        //block text
+        .block-light#content
+            h1=home.about.title
+            .text
+                each paragraph in home.about.content
+                    p=paragraph.p
+            .columns
+                each paragraph in home.about.downloads
+                    h2(style="color:#666")=paragraph.p
+                each paragraph in home.about.version
+                    h2(style="color:#666")=paragraph.p
+            .stats
+        //block image
+        .block-comp
+            input.compareSlide(type="range" min="0" max="100" step="0.01" value="50")
+            .compareBox
+                .imgCompare
+                    img.parallax(src=home.compare.img_link_1, alt="alt")
+                .imgCompare#cmp
+                    img.parallax(src=home.compare.img_link_2, alt="alt")
+        //block columns
+        .block-light
+            h1=home.features.title
+            .text
+                .columns
+                    each item in home.features.columns
+                        ul
+                            each item_ul in item.list
+                                li=item_ul.list_item
+            h1=home.features.title2
+            .columns
+                each paragraph in home.features.content
+                    p=paragraph.p
+                each item_button in home.features.buttons
+                    a.button(href=item_button.button.link)=item_button.button.title
+        //block text & image
+        each item in home.block_and_image 
+            .block-with-image
+                .text_box
+                    .text
+                        h1=item.block.title
+                        each paragraph in item.block.text
+                            p=paragraph.p
+                        .links
+                            each item_button in item.block.buttons
+                                a.button(href=item_button.button.link)=item_button.button.title
+                .slider_border(id=item.block.id)
+                    ul.slider_small_box
+                        each item_slide in item.block.slider
+                            li.img_box
+                                img.parallax(src=item_slide.slide, alt="alt")
+                                p.desc=item_slide.desc
+        .block-light
+            .columns
+                each item_button in home.downloads.buttons
+                    a.buttonBig(href=item_button.button.link, target="_blank")=item_button.button.title
+        .halfSizeBlock
+            img.parallax(src="images/Addons.jpg")
+        //block columns
+        .block-light
+            h1=home.addons.title
+            .text
+                .columns
+                    each item in home.addons.columns
+                        ul
+                            each item_ul in item.list
+                                li=item_ul.list_item
+        //block text & image
+        each item in home.block_and_image_addons
+            .block-with-image
+                .text_box
+                    .text
+                        h1=item.block.title
+                        each paragraph in item.block.text
+                            p=paragraph.p
+                        .links
+                            each item_button in item.block.buttons
+                                a.button(href=item_button.button.link)=item_button.button.title
+                .slider_border(id=item.block.id)
+                    ul.slider_small_box
+                        each item_slide in item.block.slider
+                            li.img_box
+                                img.parallax(src=item_slide.slide, alt="alt")
+                                p.desc=item_slide.desc
+block scripts
+    //script(src="js/main.js")
+    script(src="js/menu.js")
+    script(src="js/logo_anim.js")
+    script(src="js/smooth_scroll.js")
+    script(src="js/slides.js")
+    script(src="js/parallax.js")
+    script(src="js/compare.js")
+    script(src="js/zoom.js")
+    

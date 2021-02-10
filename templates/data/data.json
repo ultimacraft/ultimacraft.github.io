@@ -1,0 +1,638 @@
+{
+    "home": {
+        "header_slider": {
+            "img": [
+                {"slide" : "images/main_bg1.jpg"},
+                {"slide" : "images/main_bg2.jpg"},
+                {"slide" : "images/main_bg3.jpg"},
+                {"slide" : "images/main_bg4.jpg"},
+                {"slide" : "images/main_bg5.jpg"}
+            ]
+        },
+        "about": {
+            "title": "About",
+            "content": [
+                {"p": "UltimaCraft is a resource pack for Minecraft Java Edition that adds many new features to the game."},
+                {"p": "This pack adds custom models and changes some textures. Most of the functions work thanks to the Optifine mod. Optifine features: emissive textures, custom item textures, custom texture models and others."},
+                {"p": "UltimaCraft require Optifine mod for correct work."}
+            ],
+            "downloads": [
+                {"p": "Total downloads: 65 000+"}
+            ],
+            "version": [
+                {"p": "Minecraft version: 1.16.2 - 1.16.4"}
+            ]
+        },
+        "panorama": {
+            "img_link": "images/panorama.jpg"
+        },
+        "compare": {
+            "img_link_1": "images/compV.jpg",
+            "img_link_2": "images/compUC.jpg"
+        },
+        "features": {
+            "title": "Features",
+            "columns": [
+                {"list": [
+                    {"list_item": "custom block models;"},
+                    {"list_item": "emissive textures;"},
+                    {"list_item": "custom models;"}
+                ]},
+                {"list": [
+                    {"list_item": "custom block models;"},
+                    {"list_item": "emissive textures;"},
+                    {"list_item": "custom models."}
+                ]}
+            ],
+            "title2": "Optifine Required",
+            "content": [
+                {"p": "UltimaCraft require Optifine mod for correct work. Without this mod UltimaCraft resource pack will lose most of the features. You can download this mod and find more information about it in the link below."}
+            ],
+            "buttons": [
+                {"button": {
+                    "title": "Optifine",
+                    "link": "https://optifine.net/"
+                    }
+                }
+            ]
+        },
+        "block_and_image": [
+            {
+                "block": {
+                    "title":"Models",
+                    "id": "models",
+                    "text": [
+                        {"p": "Lots of new vanilla styled custom models for blocks. All of them are maximally optimized."}
+                    ],
+                    "slider": [
+                        {"slide": "images/3dTab.jpg", "desc": "Shaders: Sildrus Enhanced Default"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "models.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Emissive",
+                    "id": "emissive",
+                    "text": [
+                        {"p": "One of the Optifine features is emissive textures. There are some of them in this pack."}
+                    ],
+                    "slider": [
+                        {"slide": "images/EmTab.jpg", "desc": "Shaders: Sildrus Enhanced Default"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "emissive.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Custom Texture Models",
+                    "id": "ctm",
+                    "text": [
+                        {"p": "Many blocks connected with each other. Some blocks have variatons and biome depended features."}
+                    ],
+                    "slider": [
+                        {"slide": "images/CtmTab.jpg", "desc": "Shaders: Sildrus Enhanced Default"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "ctm.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Custom Item Textures",
+                    "id": "cit",
+                    "text": [
+                        {"p": "Custom item textures - were made using the capabilities of Optifine and will not work without it. UltimaCraft changes item enchantments and some item data (visual fish buckets f.e.)."}
+                    ],
+                    "slider": [
+                        {"slide": "images/CitTab.jpg"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "cit.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Enhanced Biomes",
+                    "id": "biomes",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/world1.jpg", "desc": "Shaders: Sildrus Enhanced Default"},
+                        {"slide": "images/world2.jpg", "desc": "Shaders: Sildrus Enhanced Default"},
+                        {"slide": "images/world3.jpg", "desc": "Shaders: Sildrus Enhanced Default"},
+                        {"slide": "images/world4.jpg", "desc": "Shaders: Sildrus Enhanced Default"},
+                        {"slide": "images/world5.jpg", "desc": "Shaders: Sildrus Enhanced Default"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "enhanced_biomes.html"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "downloads": {
+            "buttons": [
+                {"button": {
+                    "title": "Download",
+                    "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft/files"
+                    }
+                }
+            ]
+        },
+        "addons": {
+            "title": "Addons",
+            "columns": [
+                {"list": [
+                    {"list_item": "custom block models"},
+                    {"list_item": "emissive textures"},
+                    {"list_item": "custom models"}
+                ]},
+                {"list": [
+                    {"list_item": "custom block models"},
+                    {"list_item": "emissive textures"},
+                    {"list_item": "custom models"}
+                ]}
+            ]
+        },
+        "block_and_image_addons": [
+            {
+                "block": {
+                    "title":"Dark",
+                    "id": "dark",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/addonDark1.jpg"},
+                        {"slide": "images/addonDark2.jpg"},
+                        {"slide": "images/addonDark3.jpg"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft-dark/files"
+                        }},
+                        {"button": {
+                            "title": "Details",
+                            "link": "ultimacraft_dark.html"
+                        }}
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"PBR",
+                    "id": "pbr",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/addonPBR1.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonPBR2.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonPBR3.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonPBR4.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonPBR5.jpg", "desc": "Shaders: Kappa"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft-pbr/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "ultimacraft_pbr.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Leaf",
+                    "id": "leaf",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/addonLeaf1.jpg", "desc": "Shaders: Sildrus Enhanced Default"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft-leaf/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "ultimacraft_leaf.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Mobs",
+                    "id": "mobs",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/addonMobs1.jpg", "desc": "Shaders: Vanilla Plus"},
+                        {"slide": "images/addonMobs2.jpg", "desc": "Shaders: Vanilla Plus"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft-mobs/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "ultimacraft_mobs.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"High Res",
+                    "id": "hr",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/addonHR1.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonHR2.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonHR3.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonHR4.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonHR5.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonHR6.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonHR7.jpg", "desc": "Shaders: Kappa"},
+                        {"slide": "images/addonHR8.jpg", "desc": "Shaders: Kappa"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft-hr/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "ultimacraft_hr.html"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "enhanced_biomes_details": {
+        "about": {
+            "title": "About",
+            "content": [
+                {"p": "Some of the biomes in Minecraft a too common and this pack solves this by adding new plant variants and improved atmosphere."}
+            ]      
+        },
+        "panorama": {
+            "img_link": "images/panoramaBiome.jpg"
+        },
+        "features": {
+            "title": "Biome features",
+            "columns": [
+                {"list": [
+                    {"list_item": "autumn birch forests"},
+                    {"list_item": "snowy foliage in snowy biomes"},
+                    {"list_item": "pink birches in flower forest"}
+                ]},
+                {"list": [
+                    {"list_item": "new plants in jungle"},
+                    {"list_item": "atmospheric fog in swamp"},
+                    {"list_item": "dried plants in soul sand valley"}
+                ]}
+            ]
+        },
+        "block_and_image": [
+            {
+                "block": {
+                    "title":"Autumn Birch Forest",
+                    "id": "autumn_birch_forest",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/world5.jpg", "desc": "Shaders: Sildrus Enhanced Default"},
+                        {"slide": "images/world6.jpg", "desc": "Shaders: Sildrus Enhanced Default"}
+                    ]
+                }
+            }
+        ],
+        "comp_title": {
+            "title": "Compare",
+            "content": [
+                {"p": "Some of the biomes in Minecraft a too common and this pack solves this by adding new plant variants and improved atmosphere."}
+            ]
+        },
+        "compare": {
+            "img_link_1": "images/compV.jpg",
+            "img_link_2": "images/compUC.jpg"
+        },
+        "block_and_image_2": [
+            {
+                "block": {
+                    "title":"Snowy Biomes",
+                    "id": "snowy_biomes",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/world1.jpg", "desc": "Shaders: Sildrus Enhanced Default"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft/files"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "downloads.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Custom Texture Models",
+                    "id": "ctm",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/CtmTab.jpg", "desc": "Shaders: Sildrus Enhanced Default"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "downloads.html"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "downloads.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Custom Item Textures",
+                    "id": "cit",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/CitTab.jpg"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "downloads.html"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "downloads.html"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Enhanced Biomes",
+                    "id": "biomes",
+                    "text": [
+                        {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                    ],
+                    "slider": [
+                        {"slide": "images/world1.jpg", "desc": "Shaders: Sildrus Enhanced Default"},
+                        {"slide": "images/world2.jpg", "desc": "Shaders: Sildrus Enhanced Default"},
+                        {"slide": "images/world3.jpg", "desc": "Shaders: Sildrus Enhanced Default"},
+                        {"slide": "images/world4.jpg", "desc": "Shaders: Sildrus Enhanced Default"},
+                        {"slide": "images/world5.jpg", "desc": "Shaders: Sildrus Enhanced Default"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "Download",
+                            "link": "downloads.html"
+                            }
+                        },
+                        {"button": {
+                            "title": "Details",
+                            "link": "enhanced_biomes.html"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "downloads": {
+            "buttons": [
+                {"button": {
+                    "title": "Download",
+                    "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft/files"
+                    }
+                }
+            ]
+        }
+    },
+    "ultimacraft_hr": {
+        "about": {
+            "title": "Ultimacraft HR addon",
+            "content": [
+                {"p": "Ore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+            ]
+        },
+        "panorama": {
+            "img_link": "images/addonHR7.jpg"
+        },
+        "compare": {
+            "img_link_1": "images/compHV.jpg",
+            "img_link_2": "images/compHR.jpg"
+        },
+        "features": {
+            "title": "Сharacteristics",
+            "columns": [
+                {"list": [
+                    {"list_item": "Resolution: x512px"},
+                    {"list_item": "Style: SemiRealism"},
+                    {"list_item": "Technique: Megascans + Vanilla"},
+                    {"list_item": "PBR format: LabPBR v.3.0"},
+                    {"list_item": "Normals: Normals + Parallax"}
+                ]}
+            ]
+        },
+        "blocks": {
+            "title": "Block list",
+            "columns": [
+                {"list": [
+                    {"list_item": "grass_block"},
+                    {"list_item": "grass"},
+                    {"list_item": "dirt"},
+                    {"list_item": "cobblestone"},
+                    {"list_item": "mossy_cobblestone"},
+                    {"list_item": "obsidian"},
+                    {"list_item": "crying_obsidian"},
+                    {"list_item": "oak_log"},
+                    {"list_item": "dark_oak_log"},
+                    {"list_item": "oak_planks"},
+                    {"list_item": "oak_leaves"},
+                    {"list_item": "dark_oak_leaves"},
+                    {"list_item": "birch_leaves"}
+                ]},
+                {"list": [
+                    {"list_item": "purpur_block"},
+                    {"list_item": "stone"},
+                    {"list_item": "andesite"},
+                    {"list_item": "diorite"},
+                    {"list_item": "granite"},
+                    {"list_item": "andesite"},
+                    {"list_item": "coal_ore"},
+                    {"list_item": "diamond_ore"},
+                    {"list_item": "coal_block"}
+                ]}
+            ]
+        },
+        "block_and_image": [
+            {
+                "block": {
+                    "title":"LabPBR support",
+                    "id": "labpbr_support",
+                    "text": [
+                        {"p": "LabPBR as well as regular PBR adds roughness, metallicity and gloominess."},
+                        {"p": "However, LabPBR format also adds a couple more characteristics to the material, such as subsurface scattering and porosity."},
+                        {"p": "It gives a complete picture of the material we are dealing with: how rough it is, how bright and how transparent is it."}
+                    ],
+                    "slider": [
+                        {"slide": "images/hr_diamond.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/hr_emerald.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/hr_gold.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/hr_redstone.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/hr_iron.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/hr_obsidian.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/hr_obsidian2.jpg", "desc": "Shaders: Kappa v.3.0"}
+                    ],
+                    "buttons": [
+                        {"button": {
+                            "title": "LabPBR Info",
+                            "link": "https://github.com/rre36/lab-pbr/wiki"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "block": {
+                    "title":"Vanilla look",
+                    "id": "vanilla_look",
+                    "text": [
+                        {"p": "By mixing megascans with vanilla textures, we can achieve very good result: semi-realistic look of the game."},
+                        {"p": "Kind of vanilla blocks, but with a lot of details in it."}
+                    ],
+                    "slider": [
+                        {"slide": "images/addonHR1.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/addonHR2.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/addonHR3.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/addonHR4.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/addonHR5.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/addonHR6.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/addonHR8.jpg", "desc": "Shaders: Kappa v.3.0"}
+                    ],
+                    "buttons": []
+                }
+            },
+            {
+                "block": {
+                    "title":"Amazing details",
+                    "id": "ctm",
+                    "text": [
+                        {"p": "High quality normals with parallax make materials look amazing. With detailed speculars we can get a really nice combination of realistic view."}
+                    ],
+                    "slider": [
+                        {"slide": "images/hr_obsidian_normal.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/hr_obsidian_cracked.jpg", "desc": "Shaders: Kappa v.3.0"},
+                        {"slide": "images/hr_obsidian_glow.jpg", "desc": "Shaders: Kappa v.3.0"}
+                    ],
+                    "buttons": []
+                }
+            }
+        ],
+        "downloads": {
+            "buttons": [
+                {"button": {
+                    "title": "Download",
+                    "link": "https://www.curseforge.com/minecraft/texture-packs/ultimacraft-hr/files"
+                    }
+                }
+            ]
+        }
+    }
+
+}

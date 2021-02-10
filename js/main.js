@@ -14,7 +14,7 @@ $(document).scroll(function() {
     function parallax(subject, division) {
         $(subject).each( function() {
             var topPos = $(this).offset().top
-            if(topPos <= winHeight + scrollPos + 1000 && topPos > scrollPos - 1000) {
+            if(topPos <= winHeight + scrollPos && topPos > scrollPos - winHeight) {
                 $(this).css({
                     'transform':'scale(1.2) translate(0%, ' + (((scrollPos - topPos) / division) + 5) + '%'
                 })
@@ -27,7 +27,7 @@ $(document).scroll(function() {
     function parallaxUnscaled(subject, division) {
         $(subject).each( function() {
             var topPos = $(this).offset().top
-            if(topPos <= winHeight + scrollPos + 1000 && topPos > scrollPos - 1000) {
+            if(topPos <= winHeight + scrollPos && topPos > scrollPos - winHeight) {
                 $(this).css({
                     'transform':'scale(1.1) translate(0%, ' + (((scrollPos - topPos) / division) + 5) + '%'
                 })
@@ -53,14 +53,12 @@ $(document).scroll(function() {
 
 $(document).ready(function() {
 
-    var whenDarkOutside = 16
+    var arrowDown = '#arrow_down_box'
+    var footerNavLink = '.nav_item'
 
-    var arrowDown = '#arrowDownBox'
-    var footerNavLink = '.navItem'
-
-    var sliderBig = 'sliderBox'
-    var sliderSmall = 'sliderSmallBox'
-    var sliderImageBox = 'imgBox'
+    var sliderBig = 'slider_box'
+    var sliderSmall = 'slider_small_box'
+    var sliderImageBox = 'img_box'
     var sliderIndex = 'slider'
 
     var fadeTime_Appearing = 1500
@@ -82,20 +80,6 @@ $(document).ready(function() {
         })
     }
 
-    // smooth scroll
-    $(arrowDown).on('click','#arrowParent', function (event) {
-        event.preventDefault()
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top - $('.menuBar').height() + 5
-        $('body,html').animate({scrollTop: top}, fadeTime_Appearing)
-    })
-    $(footerNavLink).on('click','#arrowParent', function (event) {
-        event.preventDefault()
-        var id  = $(this).attr('href'),
-            top = ($(id).offset().top) - $('.menu').height() + 5
-        $('body,html').animate({scrollTop: top}, fadeTime_Appearing)
-    })
-
     // slider big
     slider(sliderBig, sliderImageBox, 15000)
 
@@ -105,9 +89,9 @@ $(document).ready(function() {
         slides[currentSlide].className = String(subSubject + ' showing')
         setInterval(nextSlide, delay)
 
-        $('#logoCoverBlock .logoCover').on('click', function(){
-            nextSlide()
-        })
+        // $('#logo_cover_block .logo_cover').on('click', function(){
+        //     nextSlide()
+        // })
 
         function nextSlide() {
             slides[currentSlide].className = String(subSubject)
@@ -135,69 +119,6 @@ $(document).ready(function() {
         }
     }
 
-
-    
-    var subMenuFixed = '.menuBar .menuLink p'
-    var subMenuStatic = '.menuBarSecond .menuLink p'
-
-    $(subMenuFixed).on('click', function(){
-        $('.menuBar .subMenu').fadeToggle(fadeTime_MenuList)
-        $(this).toggleClass('activeList')
-    })
-    $(subMenuStatic).on('click', function(){
-        $('.menuBarSecond .subMenu').fadeToggle(fadeTime_MenuList)
-        $(this).toggleClass('activeList')
-    })
-
-    $(window).resize(function() {
-        var subMenuWidth = $('.menuBar .menuLink .subMenu').width()
-        
-        $(subMenuFixed).width(subMenuWidth)
-        $(subMenuStatic).width(subMenuWidth)
-    })
-    var subMenuWidth = $('.menuBar .menuLink .subMenu').width()
-        
-    $(subMenuFixed).width(subMenuWidth)
-    $(subMenuStatic).width(subMenuWidth)
-
-
-
-    // menu
-    var menuHeight = $('.menuBar').height()
-    var blockTop = $('#headerSlider').height()
-    var blockTopSmall = $('#headerSmallerSlider').height()
-    $(window).resize(function() {
-        menuHeight = $('.menuBar').height()
-        blockTop = $('#headerSlider').height()
-        blockTopSmall = $('#headerSmallerSlider').height()
-    })
-    $(window).on('load scroll', function() {
-        var top = $(window).scrollTop()
-        if (top >= blockTop - menuHeight || top >= blockTopSmall - menuHeight) {
-            CountDown()
-        } else {
-            CountUp()
-        }
-    })
-    function CountUp() {
-        $('.menuBar').css({
-            'top':'-' + $('.menuBar').height() + 'px'
-        })
-        // $('.menuButtonsFixed').css({
-        //     'top':'-' + $('.menuBar').height() + 'px'
-        // })
-        $('.menuBar .subMenu').fadeOut(fadeTime_MenuList)
-    }
-    function CountDown() {
-        $('.menuBar').css({
-            'top':'0'
-        })
-        // $('.menuButtonsFixed').css({
-        //     'top':'0'
-        // })
-    }
-
-
     //$('#closeZoom').width($('#fullScreenImg').width())
     //$('#closeZoom').height($('#fullScreenImg').height())
     //var imgTop = $('#fullScreenImg').offset().top()
@@ -220,16 +141,24 @@ $(document).ready(function() {
     //$('#fullScreenBlock').fadeOut(1)
 
     //var isOn = false
-    $('img').click(function(){
-
-        let imgSrc = $(this).attr('src')
-
+    function zoomImgShow(src, desc) {
         //$("html,body").css("overflow-y","hidden")
         $('#fullScreenBlock').fadeToggle(500)
-        $('#fullScreenImg')[0].src = imgSrc
+        $('#fullScreenImg')[0].src = src
+        
+        $('#fullScreenText').text($(desc).text())
+    }
+    $('.img_box img').click(function(event){
+        let imgSrc = $(this).attr('src')
         let description = $(this).siblings(".desc")
-        $('#fullScreenText').text($(description).text())
-
+        zoomImgShow(imgSrc, description)
+    })
+    $('#fullScreenBlock').click(function(event){
+        let imgSrc = $('#fullScreenImg').attr('src')
+        let description = $('#fullScreenText').siblings(".desc")
+        if (event.target.id != 'fullScreenText') {
+            zoomImgShow(imgSrc, description)
+        }
     })
 
     // $('#closeZoom').click(function(){

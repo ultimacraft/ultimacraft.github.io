@@ -1,0 +1,70 @@
+mixin logo()
+    .logo_cover
+        svg(class="logo_svg" data-name="uc-logo" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 1162 458")
+            title ultimacraft
+            filter(id="dropshadow" height="130%")
+                feGaussianBlur(in="SourceAlpha" stdDeviation="5")
+                feOffset(dx="0" dy="0" result="offsetblur")
+                feComponentTransfer
+                    feFuncA(type="linear" slope="0")
+                feMerge
+                    feMergeNode
+                    feMergeNode(in="SourceGraphic")
+            polygon(class="logo_element" points="256.5 191.5 256.5 0.5 319.5 0.5 319.5 128.5 383.5 128.5 383.5 191.5 256.5 191.5" filter="url(#dropshadow)")
+            path(d="M383,417V545h64v62H321V417h62m1-1H320V608H448V544H384V416Z" transform="translate(-64 -416)")
+            polygon(points="384.5 447.5 384.5 415.5 319.5 415.5 319.5 447.5 256.5 447.5 256.5 256.5 447.5 256.5 447.5 351.5 384.5 351.5 384.5 319.5 319.5 319.5 319.5 352.5 383.5 352.5 383.5 384.5 447.5 384.5 447.5 447.5 384.5 447.5" filter="url(#dropshadow)")
+            path(d="M511,673v94H449V735H383v34h64v32h64v62H449V831H383v32H321V673H511m1-1H320V864h64V832h64v32h64V800H448V768H384V736h64v32h64V672Z" transform="translate(-64 -416)")
+            path(class="not_a_path" d="M704.5,863.5v-32h-65v32h-63v-191h191v191Zm-65-95h65v-33h-65Z" transform="translate(-64 -416)" filter="url(#dropshadow)")
+            path(d="M767,673V863H705V831H639v32H577V673H767M639,769h66V735H639v34m129-97H576V864h64V832h64v32h64V672ZM640,768V736h64v32Z" transform="translate(-64 -416)")
+            polygon(points="768.5 447.5 768.5 256.5 895.5 256.5 895.5 319.5 831.5 319.5 831.5 352.5 959.5 352.5 959.5 415.5 831.5 415.5 831.5 447.5 768.5 447.5" filter="url(#dropshadow)")
+            path(d="M959,673v62H895v34h128v62H895v32H833V673H959m1-1H832V864h64V832h128V768H896V736h64V672Z" transform="translate(-64 -416)")
+            polygon(points="1024.5 447.5 1024.5 319.5 960.5 319.5 960.5 256.5 1151.5 256.5 1151.5 319.5 1087.5 319.5 1087.5 447.5 1024.5 447.5" filter="url(#dropshadow)")
+            path(d="M1215,673v62h-64V863h-62V735h-64V673h190m1-1H1024v64h64V864h64V736h64V672Z" transform="translate(-64 -416)")
+            polygon(points="448.5 191.5 448.5 63.5 384.5 63.5 384.5 0.5 575.5 0.5 575.5 63.5 511.5 63.5 511.5 191.5 448.5 191.5" filter="url(#dropshadow)")
+            path(d="M639,417v62H575V607H513V479H449V417H639m1-1H448v64h64V608h64V480h64V416Z" transform="translate(-64 -416)")
+            polygon(points="832.5 191.5 832.5 63.5 767.5 63.5 767.5 191.5 704.5 191.5 704.5 63.5 640.5 63.5 640.5 0.5 895.5 0.5 895.5 191.5 832.5 191.5" filter="url(#dropshadow)")
+            path(d="M959,417V607H897V479H831V607H769V479H705V417H959m1-1H704v64h64V608h64V480h64V608h64V416Z" transform="translate(-64 -416)")
+            rect(x="576.5" y="96.5" width="63" height="127" filter="url(#dropshadow)")
+            path(d="M703,513V639H641V513h62m1-1H640V640h64V512Z" transform="translate(-64 -416)")
+            path(class="not_a_path" d="M1152.5,607.5v-32h-65v32h-63v-191h191v191Zm-65-95h65v-33h-65Z" transform="translate(-64 -416)" filter="url(#dropshadow)")
+            path(d="M1215,417V607h-62V575h-66v32h-62V417h190m-128,96h66V479h-66v34m129-97H1024V608h64V576h64v32h64V416Zm-128,96V480h64v32Z" transform="translate(-64 -416)")
+            polygon(points="0.5 191.5 0.5 0.5 63.5 0.5 63.5 128.5 128.5 128.5 128.5 0.5 191.5 0.5 191.5 191.5 0.5 191.5" filter="url(#dropshadow)")
+            path(d="M255,417V607H65V417h62V545h66V417h62m1-1H192V544H128V416H64V608H256V416Z" transform="translate(-64 -416)")
+            polygon(points="0.5 447.5 0.5 256.5 191.5 256.5 191.5 319.5 63.5 319.5 63.5 384.5 191.5 384.5 191.5 447.5 0.5 447.5" filter="url(#dropshadow)")
+            path(d="M255,673v62H127v66H255v62H65V673H255m1-1H64V864H256V800H128V736H256V672Z" transform="translate(-64 -416)")
+    //- .logo_cover
+    //-     svg(class="logo_svg" data-name="uc-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1280 1280" style="enable-background:new 0 0 1280 1280;" xml:space="preserve")
+    //-         title ultimacraft
+    //-         g
+    //-             polygon(class="st0" points="322.5,605.5 322.5,418.5 381.5,418.5 381.5,546.5 445.5,546.5 445.5,605.5")
+    //-             path(d="M379,421v123v5h5h59v54H325V421H379 M384,416h-64v192h128v-64h-64V416L384,416z")
+    //-         g
+    //-             polygon(class="st0" points="450.5,861.5 450.5,829.5 381.5,829.5 381.5,861.5 322.5,861.5 322.5,674.5 509.5,674.5 509.5,765.5 450.5,765.5 450.5,733.5 381.5,733.5 381.5,770.5 445.5,770.5 445.5,802.5 509.5,802.5 509.5,861.5 	")
+    //-             path(d="M507,677v86h-54v-27v-5h-5h-64h-5v5v32v5h5h59v27v5h5h59v54h-54v-27v-5h-5h-64h-5v5v27h-54V677H507 M512,672H320v192h64v-32h64v32h64v-64h-64v-32h-64v-32h64v32h64V672L512,672z")
+    //-         g
+    //-             path(class="st0" d="M706.5,861.5v-32h-69v32h-59v-187h187v187H706.5z M637.5,770.5h69v-37h-69V770.5z")
+    //-             path(d="M763,677v182h-54v-27v-5h-5h-64h-5v5v27h-54V677H763 M635,773h5h64h5v-5v-32v-5h-5h-64h-5v5v32V773 M768,672H576v192h64v-32h64v32h64V672L768,672z M640,768v-32h64v32H640L640,768z")
+    //-         g
+    //-             polygon(class="st0" points="834.5,861.5 834.5,674.5 957.5,674.5 957.5,733.5 893.5,733.5 893.5,770.5 1021.5,770.5 1021.5,829.5 893.5,829.5 893.5,861.5")
+    //-             path(d="M955,677v54h-59h-5v5v32v5h5h123v54H896h-5v5v27h-54V677H955 M960,672H832v192h64v-32h128v-64H896v-32h64V672L960,672z")
+    //-         g
+    //-             polygon(class="st0" points="1090.5,861.5 1090.5,733.5 1026.5,733.5 1026.5,674.5 1213.5,674.5 1213.5,733.5 1149.5,733.5 1149.5,861.5")
+    //-             path(d="M1211,677v54h-59h-5v5v123h-54V736v-5h-5h-59v-54H1211 M1216,672h-192v64h64v128h64V736h64V672L1216,672z")
+    //-         g
+    //-             polygon(class="st0" points="514.5,605.5 514.5,477.5 450.5,477.5 450.5,418.5 637.5,418.5 637.5,477.5 573.5,477.5 573.5,605.5")
+    //-             path(d="M635,421v54h-59h-5v5v123h-54V480v-5h-5h-59v-54H635 M640,416H448v64h64v128h64V480h64V416L640,416z")
+    //-         g
+    //-             polygon(class="st0" points="898.5,605.5 898.5,477.5 829.5,477.5 829.5,605.5 770.5,605.5 770.5,477.5 706.5,477.5 706.5,418.5 957.5,418.5 957.5,605.5")
+    //-             path(d="M955,421v182h-54V480v-5h-5h-64h-5v5v123h-54V480v-5h-5h-59v-54H955 M960,416H704v64h64v128h64V480h64v128h64V416L960,416z")
+    //-         g
+    //-             rect(x="642.5" y="514.5" class="st0" width="59" height="123")
+    //-             path(d="M699,517v118h-54V517H699 M704,512h-64v128h64V512L704,512z")
+    //-         g
+    //-             path(class="st0" d="M1154.5,605.5v-32h-69v32h-59v-187h187v187H1154.5z M1085.5,514.5h69v-37h-69V514.5z")
+    //-             path(d="M1211,421v182h-54v-27v-5h-5h-64h-5v5v27h-54V421H1211 M1083,517h5h64h5v-5v-32v-5h-5h-64h-5v5v32V517 M1216,416h-192v192h64v-32h64v32h64V416L1216,416z M1088,512v-32h64v32H1088L1088,512z")
+    //-         g
+    //-             polygon(class="st0" points="66.5,605.5 66.5,418.5 125.5,418.5 125.5,546.5 194.5,546.5 194.5,418.5 253.5,418.5 253.5,605.5")
+    //-             path(d="M251,421v182H69V421h54v123v5h5h64h5v-5V421H251 M256,416h-64v128h-64V416H64v192h192V416L256,416z")
+    //-         g
+    //-             polygon(class="st0" points="66.5,861.5 66.5,674.5 253.5,674.5 253.5,733.5 125.5,733.5 125.5,802.5 253.5,802.5 253.5,861.5")
+    //-             path(d="M251,677v54H128h-5v5v64v5h5h123v54H69V677H251 M256,672H64v192h192v-64H128v-64h128V672L256,672z")

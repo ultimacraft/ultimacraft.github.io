@@ -1,0 +1,36 @@
+mixin menu()
+    menu.menu_bar
+        ul.menu
+            li.menu_button
+                div
+                    a.menu_link(href="index.html") home
+
+            li.menu_button
+                div.list_button projects
+                ul.sub_menu
+                    li.sub_menu_button
+                        div
+                            a.menu_link(href="index.html") ultimacraft
+                    li.sub_menu_button
+                        div
+                            a.menu_link(href="https://www.curseforge.com/minecraft/texture-packs/better-snow") snowier snow
+
+            li.menu_button
+                div
+                    a.menu_link(href="about.html") blog
+                
+    //- menu.menu_bar_additional
+    //-     ul.menu
+    //-         li.menu_button
+    //-             a.menu_link(href="index.html") home
+
+    //-         li.menu_button
+    //-             span.list_button projects
+    //-             ul.sub_menu
+    //-                 li.sub_menu_button
+    //-                     a.menu_link(href="index.html") ultimacraft
+    //-                 li.sub_menu_button
+    //-                     a.menu_link(href="https://www.curseforge.com/minecraft/texture-packs/better-snow") better snow
+
+    //-         li.menu_button
+    //-             a(href="about.html") blog
