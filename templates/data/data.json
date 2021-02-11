@@ -182,7 +182,11 @@
                 }
             }
         ],
-        "downloads": {
+        "cit": {
+            "title": "Custom Item Textures",
+            "content": [
+                {"p": "Custom item textures - were made using the capabilities of Optifine and will not work without it. UltimaCraft changes item enchantments and some item data (visual fish buckets f.e.)."}
+            ],
             "buttons": [
                 {"button": {
                     "title": "Download",

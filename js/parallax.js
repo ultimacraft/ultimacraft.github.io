@@ -5,21 +5,19 @@ $(window).resize(function() {
 var lastScrollPos = $(document).scrollTop()
 var scrollPos = $(this).scrollTop()
 
-function skewPage(formula) {
-    if( formula > 45)
-        $( '#page' ).css('transform', 'skew(0, ' + 45 + 'deg)')
-    else if( formula < -45)
-        $( '#page' ).css('transform', 'skew(0, ' + -45 + 'deg)')
+const skewPage = (formula) => {
+    if( formula > 5)
+        $( '#page' ).css('transform', 'skew(0, ' + 5 + 'deg)')
+    else if( formula < -5)
+        $( '#page' ).css('transform', 'skew(0, ' + -5 + 'deg)')
     else
         $( '#page' ).css('transform', 'skew(0, ' + formula + 'deg)')
 }
 
-$(document).scroll(function() {
+$( document ).scroll( () => {
     scrollPos = $(this).scrollTop()
     
-    parallax('.parallax', 65)
-    
-    function parallax(subject, division) {
+    const parallax = (subject, division) => {
         $(subject).each( function() {
             var topPos = $(this).offset().top
             if(topPos <= winHeight + scrollPos && topPos > scrollPos - winHeight) {
@@ -29,10 +27,21 @@ $(document).scroll(function() {
             }
         })
     }
+    parallax('.parallax', 65)
 
-    parallaxUnscaled('.parallaxUnscaled', 65)
+    const parallaxStrong = (subject, division) => {
+        $(subject).each( function() {
+            var topPos = $(this).offset().top
+            if(topPos <= winHeight + scrollPos && topPos > scrollPos - winHeight) {
+                $(this).css({
+                    'transform':'scale(1.2) translate(0%, ' + ((scrollPos - topPos) / division) + '%'
+                })
+            }
+        })
+    }
+    parallaxStrong('.parallaxStrong', 20)
 
-    function parallaxUnscaled(subject, division) {
+    const parallaxUnscaled = (subject, division) => {
         $(subject).each( function() {
             var topPos = $(this).offset().top
             if(topPos <= winHeight + scrollPos && topPos > scrollPos - winHeight) {
@@ -42,23 +51,26 @@ $(document).scroll(function() {
             }
         })
     }
+    parallaxUnscaled('.parallaxUnscaled', 65)
 
-    // setTimeout( () => {
-    //     lastScrollPos = $( document ).scrollTop()
-    // }, 100)
-    
-    //skewPage()
-    // console.log('last = ' + lastScrollPos / 100)
-    // console.log('cur = ' + scrollPos / 100)
-    // console.log('culc = ' + (scrollPos / 100) - (lastScrollPos / 100))
+    const parallaxRows = ( subject, division ) => {
+        $( subject ).each( function( index ) {
+            var topPos = $(this).offset().top
+            if(topPos <= winHeight + scrollPos && topPos > scrollPos - winHeight) {
+                $(this).css({
+                    'transform':'translate(' + (((scrollPos - topPos) / division) + 20 + (index * -3) ) + '%, 0%)'
+                })
+            }
+        })
+    }
+    parallaxRows('.row_item, .row_item_sec', 40)
 })
-//setInterval( skewPage(), 300)
 
 var checkScrollSpeed = (function(settings){
     settings = settings || {};
   
     var lastPos, newPos, timer, delta, 
-        delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
+        delay = settings.delay || 50;
   
     function clear() {
       lastPos = null;
@@ -69,7 +81,7 @@ var checkScrollSpeed = (function(settings){
     
     return function(){
       newPos = window.scrollY;
-      if ( lastPos != null ){ // && newPos < maxScroll 
+      if ( lastPos != null ){
         delta = newPos -  lastPos;
       }
       lastPos = newPos;
@@ -79,7 +91,6 @@ var checkScrollSpeed = (function(settings){
     };
 })();
 
-// listen to "scroll" event
 window.onscroll = function(){
-    skewPage( checkScrollSpeed() / 30 )
+    skewPage( checkScrollSpeed() / 80 )
 };

@@ -4,7 +4,7 @@ $(document).ready(function() {
         $(object).on( 'click', target, function ( event ) {
             event.preventDefault()
             let id  = $(this).attr( 'href' ),
-                top = $(id).offset().top - $( '.menu_bar' ).height()
+                top = $(id).offset().top - $( '.menu_bar' ).height() + 1
             $('body,html').animate({scrollTop: top}, 1500)
         })
     }

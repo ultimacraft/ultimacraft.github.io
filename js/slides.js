@@ -12,7 +12,7 @@ $(document).ready(function() {
         var slides = document.querySelectorAll(String('.' + mainSubject + ' .' + subSubject))
         var currentSlide = 0
         slides[currentSlide].className = String(subSubject + ' showing')
-        setInterval(nextSlide, delay)
+        setInterval( nextSlide, delay )
 
         // $('#logo_cover_block .logo_cover').on('click', function(){
         //     nextSlide()

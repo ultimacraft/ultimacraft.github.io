@@ -125,7 +125,6 @@ a:focus {
 
 img {
   transform: scale(1.2) translate(0%, 5%);
-  transition: transform .1s;
   object-fit: cover;
   cursor: pointer;
 }
@@ -706,16 +705,6 @@ hr {
   overflow: hidden;
 }
 
-.halfSizeBlock {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
-  width: 100vw;
-  height: 70vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .block-with-image {
   display: flex;
   width: 100%;
@@ -867,6 +856,42 @@ hr {
   text-shadow: 0 0 10px #000000;
   font-size: 1.8rem;
   transition: bottom 1s;
+}
+
+.half_size_block {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  padding: 5vh 0;
+  width: 100vw;
+  height: 70vh;
+  background-color: #222222;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.row_item, .row_item_sec {
+  display: flex;
+  width: 165vw;
+  height: 15vh;
+  justify-content: space-between;
+  padding: 0 3vw;
+  align-items: center;
+  overflow: hidden;
+  margin: 2vh 0;
+}
+
+.row_item img, .row_item_sec img {
+  height: 10vh;
+  margin: 0 6vh;
+}
+
+.item_box {
+  position: relative;
+  flex-direction: column;
+  width: 150%;
+  height: 100%;
 }
 
 #full_screen_block {
